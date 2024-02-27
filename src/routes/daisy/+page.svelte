@@ -33,12 +33,11 @@
 
   onMount(()=> fetchTodos());
 </script>
-
-  <h1>Todo List</h1>
+<h2>Todo List</h2>
 
   <form on:submit={handleSubmit}>
-    <input type="text" name="title" placeholder="Add new todo" />
-    <button type="submit">Add</button>
+    <input type="text" name="title" class="input input-primary" placeholder="Add new todo" />
+    <button type="submit" class="btn btn-primary">Add</button>
   </form>
 
   <br/>

@@ -33,8 +33,8 @@
 
   onMount(()=> fetchTodos());
 </script>
-
-  <h1>Todo List</h1>
+  <div class="bg-slate-800 text-slate-200 h-screen ">
+    <h1 class="text-xl font-medium">Todo List</h1>
 
   <form on:submit={handleSubmit}>
     <input type="text" name="title" placeholder="Add new todo" />
@@ -49,3 +49,4 @@
   {#if todos.length == 0}
   <div>No tasks.</div>
   {/if}
+  </div>
